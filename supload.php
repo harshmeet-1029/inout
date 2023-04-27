@@ -142,19 +142,14 @@
         <div name="error2" class="error2" id="error2"></div>
         <button type="submit" id="submit_btn" class="btn btn-primary">Submit</button>
       </form>
-      </div>
-      <h4>Upload Excel File</h4>
-      <form method="GET" action="exluplod.php" >
-      <!--div class="form-group"-->
+  
+    </div>
+    <h4>Upload Excel File</h4>
+      <form method="POST" action="exluplod.php" class="form-horizontal well" name="upload_excel" enctype="multipart/form-data">
         <label for="exampleInputFile" class="file-upload btn btn-primary" >Choose File
-        <input type="file"  required/></label>
-      <!--/div-->
-      
-        <div class="form-group">
-          <button type="submit" name="submit" class="btn btn-success">Upload</button>
-        </div>
+        <input type="file" class="uploadFile" name="uploadFile" id="uploadFile" accept=".xls,.xlsx" required/></label>
+        <button type="submit" name="Import" id="submit" class="btn btn-success" >Upload</button>
       </form>
-
     <?php
       
     if($_SERVER["REQUEST_METHOD"] == "POST") {
