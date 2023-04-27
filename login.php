@@ -93,7 +93,7 @@
               </nav>
               <div class="copyright float-right">©
                 <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by
-                  <a href="https://github.com/harshmeet-1029" target="_blank">Harshmeet Singh</a> for a better web.
+                  <a href="https://github.com/harshmeet-1029" target="_blank" style="color:#97DEFF;">Harshmeet Singh</a> for a better web.
               </div>
             </div>
           </footer>

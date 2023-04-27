@@ -155,8 +155,8 @@
 		    	<?php } else { ?>
 		    		<img src="assets/img/placeholder.png" class="rounded-circle mb-4" alt="...">
 		    	<?php } ?>
-					<h4 class="mb-0" style="font-weight: 800;"><?php echo $e_name; ?></h4>
-					<p class="mb-2"><?php echo $usn; ?></p>
+					<h4 class="mb-0" style="font-weight: 800;color:#00FFCA;"><?php echo $e_name; ?></h4>
+					<p class="mb-2"style="color:#00FFCA;"><?php echo $usn; ?></p>
 				</div>
 				<?php
 					}
@@ -173,8 +173,8 @@
 				<div class="h2 t-shadow">
 					<?php
 						if ($msg == "1") {
-							?> <span class="animated flash"> <?php 
-						    echo "<span class='text-primary'>Your ".$_SESSION['noname']." is: " . $usn . "<br>Entry time is: " . date('g:i A', strtotime($time))."</span>";
+							?> <span class="animated flash" > <?php 
+						    echo "<span class='text-primary' style='color:#F1F1F1 !important;'>Your ".$_SESSION['noname']." is: " . $usn . "<br>Entry time is: " . date('g:i A', strtotime($time))."</span>";
 						    ?> </span> <?php
 						} elseif ($msg == "2") {
 						    # code...
