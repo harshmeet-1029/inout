@@ -87,7 +87,7 @@
               <nav class="float-left footer-menu">
                 <ul>
                   <li>
-                    <a href="https://github.com/omkar2403/inout/">In Out System</a>
+                    <a href="https://github.com/harshmeet-1029/inout/">In Out System</a>
                   </li>
                 </ul>
               </nav>

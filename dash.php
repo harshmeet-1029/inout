@@ -58,14 +58,14 @@
   $quotes = json_decode($jsonfile, true);
   $onequote = $quotes[rand(0, count($quotes) - 1)];
 ?>
-<body style="background-color: #F1EADE;"> 
+<body style="background-image: url('assets/img/a.jpg');"> 
 <!-- MAIN CONTENT START -->
 <div class="content" style="min-height: calc(100vh - 90px);">
 	<div class="container-fluid">
 	  <div class="row">
-	    <div class="col-md-6">
+	    <div class="col-md-6" style="opacity:0.9">
 	    	<div class="card" style="min-height: calc(100vh - 150px);">
-	        <div class="card-body">
+	        <div class="card-body" >
 	        	<?php if($banner) { ?>
 							<img class="img-responsive" src="assets/img/banner.png">
 						<?php }else{ ?>
@@ -79,7 +79,7 @@
 							<div class="h4 text-center" style="text-align: justify !important;">
 								 <?php echo "<br/>".nl2br($data['nbody']); ?> 
 							</div>
-							<div class="h4 text-success text-center">
+							<div class="h4 text-success text-center" style="color:#088395 !important;">
 						 		<?php echo "<br/>".$data['nfoot']; ?> 
 							</div>
 						</div>
@@ -139,8 +139,8 @@
 	      </div>
 	    </div>
 	    <div class="col-md-6 text-center" style="margin-top: 24px;">
-	    	<div>
-		    	<h2>In Out Management System</h2>
+	    	<div style="color:white;">
+		    	<h2 >In Out Management System</h2>
 		    	<h3><?php echo $_SESSION['locname']; ?></h3>
 		    	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
 		        <input type="text" name="id" id="usn" class="" value="" autofocus="true">
