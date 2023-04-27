@@ -273,3 +273,12 @@
 	}
 }
 
+label.exampleInputFile{
+
+  color:black;
+  margin:0px !important;
+  border-style: groove; 
+  padding:5px 5px 0px 5px;
+  line-height: 0% !important;
+  border-radius: 10px;
+}

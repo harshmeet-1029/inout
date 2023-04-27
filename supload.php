@@ -15,8 +15,9 @@
 ?>
 
     <div class="container">
-      <br><br>
+      <br><br><br>
       <h4>Student Record Entry</h4>
+      <br>
       <form method="POST" action="" id="Myform" name="Myform" >
         <div class="form-group">
           <label for="mnum">Memebrship Number:</label>
@@ -141,8 +142,21 @@
         <div name="error2" class="error2" id="error2"></div>
         <button type="submit" id="submit_btn" class="btn btn-primary">Submit</button>
       </form>
-    </div>
+      </div>
+      <h4>Upload Excel File</h4>
+      <form method="GET" action="exluplod.php" >
+      <!--div class="form-group"-->
+        <label for="exampleInputFile" class="file-upload btn btn-primary" >Choose File
+        <input type="file"  required/></label>
+      <!--/div-->
+      
+        <div class="form-group">
+          <button type="submit" name="submit" class="btn btn-success">Upload</button>
+        </div>
+      </form>
+
     <?php
+      
     if($_SERVER["REQUEST_METHOD"] == "POST") {
       $mnum = $_POST["mnum"];
       $stuname = $_POST["stuname"];
