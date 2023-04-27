@@ -285,6 +285,16 @@
 	}, 9800);
 </script>
 <!-- MAIN CONTENT ENDS -->
-<?php
-	require_once "./template/footer.php";
-?>	
+<footer class="footer" style="color:white;">
+          <div class="container-fluid" >
+            <nav class="float-left">
+              <ul>
+                <li><a href="https://github.com/harshmeet-1029/inout/" target="_blank">In Out Management System</a></li>
+                <!--li><a href="https://www.koha-community.org/" target="_blank">Powered By KOHA Community</a></li-->
+              </ul>
+            </nav>
+            <div class="copyright float-right">©<script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons" style="color:red;">favorite</i> by
+              <a href="https://github.com/harshmeet-1029" target="_blank" style="color:#97DEFF;">Harshmeet Singh</a> for a better web.
+            </div>
+          </div>
+</footer>               
