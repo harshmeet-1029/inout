@@ -144,12 +144,17 @@
       </form>
   
     </div>
+
     <h4>Upload Excel File</h4>
       <form method="POST" action="exluplod.php" class="form-horizontal well" name="upload_excel" enctype="multipart/form-data">
+
         <label for="exampleInputFile" class="file-upload btn btn-primary" >Choose File
-        <input type="file" class="uploadFile" name="uploadFile" id="uploadFile" accept=".xls,.xlsx" required/></label>
-        <button type="submit" name="Import" id="submit" class="btn btn-success" >Upload</button>
+
+        <input type="file" class="uploadFile" name="uploadFile" id="uploadFile" accept=".xls,.xlsx" max="2097152"required/></label>
+
+        <button type="submit" name="submit" id="submit" class="btn btn-success" value="submit" >Upload</button>
       </form>
+
     <?php
       
     if($_SERVER["REQUEST_METHOD"] == "POST") {
