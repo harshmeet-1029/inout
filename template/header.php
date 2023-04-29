@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/clock.css">
 		<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+		<script src="assets/js/custom2.js" type="text/javascript" ></script>
     	<script src="assets/js/custom.js" type="text/javascript" ></script>
 		<script src="assets/js/plugins/bootstrap-notify.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">

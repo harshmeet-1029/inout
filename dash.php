@@ -9,7 +9,7 @@
 	require "./functions/access.php";
 	require_once "./template/header.php";
 	require "functions/dbfunc.php";
-
+	//require "signout_verify.php";
   $loc = $_SESSION['loc'];
 
   $new_arrivals = false;
@@ -59,9 +59,23 @@
   $onequote = $quotes[rand(0, count($quotes) - 1)];
 ?>
 <body style="background-image: url('assets/img/a.jpg');"> 
+<div class="justify-content-end" id="cl">
+	<form class="navbar-form pull-right">
+	</form>
+	<ul class="navbar-nav pull-right" style="padding:10px;">
+	<li class="nav-item" >
+		<i class="material-icons" style="color:red;cursor: pointer;">power_settings_new</i>
+		<p class="d-lg-none d-md-block" style="color:blue;">
+		Logout
+		</p>
+	<div id="hiddenpass"></div>
+	</li>
+	</ul>
+</div>
 <!-- MAIN CONTENT START -->
 <div class="content" style="min-height: calc(100vh - 90px);">
 	<div class="container-fluid">
+		
 	  <div class="row">
 	    <div class="col-md-6" style="opacity:0.9">
 	    	<div class="card" style="min-height: calc(100vh - 150px);">
