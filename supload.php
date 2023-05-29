@@ -188,7 +188,7 @@
             echo '<script>alert("'.mysqli_error($koha).'")</script>';
 
           }
-          console.log("data enterd");
+          echo "<script>alert('data enterd')</script>";
       }
       else if($exampleRadios ==  ""){
         echo "<script>error.innerHTML = 'Required Feild';error.style.color = 'red';</script>";

@@ -115,7 +115,7 @@ class Properties
         // Initialise values
         $this->lastModifiedBy = $this->creator;
         $this->created = self::intOrFloatTimestamp(null);
-        $this->modified = $this->created;
+        $this->modified = self::intOrFloatTimestamp(null);
     }
 
     /**
@@ -151,9 +151,9 @@ class Properties
      *
      * @return $this
      */
-    public function setLastModifiedBy(string $modifiedBy): self
+    public function setLastModifiedBy(string $modifier): self
     {
-        $this->lastModifiedBy = $modifiedBy;
+        $this->lastModifiedBy = $modifier;
 
         return $this;
     }
@@ -171,9 +171,7 @@ class Properties
             if (is_numeric($timestamp)) {
                 $timestamp = (float) $timestamp;
             } else {
-                $timestamp = (string) preg_replace('/[.][0-9]*$/', '', $timestamp);
-                $timestamp = (string) preg_replace('/^(\\d{4})- (\\d)/', '$1-0$2', $timestamp);
-                $timestamp = (string) preg_replace('/^(\\d{4}-\\d{2})- (\\d)/', '$1-0$2', $timestamp);
+                $timestamp = preg_replace('/[.][0-9]*$/', '', $timestamp) ?? '';
                 $timestamp = (float) (new DateTime($timestamp))->format('U');
             }
         }
@@ -434,7 +432,7 @@ class Properties
      *
      * @param mixed $propertyValue
      * @param string $propertyType
-     *      'i'    : Integer
+     *   'i' : Integer
      *   'f' : Floating Point
      *   's' : String
      *   'd' : Date/Time
